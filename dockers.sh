@@ -7,7 +7,7 @@ cd /root/biz
 apt-get install curl
 curl https://raw.githubusercontent.com/WhatsApp/WhatsApp-Business-API-Setup-Scripts/master/installation/docker-compose.yml > docker-compose.yml
 curl https://raw.githubusercontent.com/WhatsApp/WhatsApp-Business-API-Setup-Scripts/master/installation/db.env > db.env
-export WA_API_VERSION=2.35.5
+export WA_API_VERSION=2.35.4
 
 apt-get remove docker docker-engine docker.io containerd runc -y
 apt-get update -y
@@ -29,6 +29,6 @@ docker-compose --version
 
 docker-compose up -d
 docker-compose ps
-export WA_API_VERSION=2.35.5
+export WA_API_VERSION=2.35.4
 
 
